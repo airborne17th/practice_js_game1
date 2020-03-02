@@ -1,0 +1,133 @@
+.jumbotron{
+   background: #000000 url(images/bg.jpg) 10% 30% no-repeat;
+   color: white;
+   font-size: 1.5em;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DFEDDC;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+    padding-top: 2em;
+    top: 20%;
+}
+
+.users img{
+  width: 25%;
+  border-radius: 50%;
+}
+
+.socialmedia a {
+  width: 2em;
+  height: 2em;
+}
+
+.newsletter{
+  text-align: center;
+  margin-top: 1.5em;
+  background: url(images/bg-sample1.jpg);
+  background-position: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+nav ul{
+  padding-left: 1em;
+  background-color: #BB191B;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.button {
+  background-color: #BB191B; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.inner {
+  background:#BB191B;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  }
+  
+.inner h1 {
+      color: white;
+      margin: 0;
+  }
+
+.inner p {
+      color: white;
+      font-size: .8rem;
+  }
+
+.inner span {
+      float: right;
+      color: white;
+      font-weight: bold;
+      transition: color .5s;
+      position: relative;
+      margin-right: 4%;
+  }
+
+.inner:hover {
+  clip-path: circle(75%);
+  background: #BB191B;
+}
+
+.inner:hover span {
+  color: rgba(255,255,255,0)
+}
+
+.bigButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #BB191B;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #AD4C50;
+}
+
+.bigButton:hover {background-color: #BB191B}
+
+.bigButton:active {
+  background-color: #BB191B;
+  box-shadow: 0 5px #AD4C50;
+  transform: translateY(4px);
+}

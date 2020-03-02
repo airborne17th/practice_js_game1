@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/80c1c40743.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" href="./images/bIcon.png">
+        <title>Nintendo Fun Facts</title>
+    </head>
+    <body>
+    <div class="jumbotron text-center">
+    <nav>
+    <ul>
+        <li><h2>Nintendo Fun Facts</h2></li>
+        <li><a href="index.index">Home</a></li>
+        <li><a href="data.index">Fact List</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    </nav>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+
+        <div class="container">
+        <div class="intro">
+      <h2>Welcome to Nintendo Facts</h2>
+      <p>This is a fan website dedicated to giving cool and interesting facts about Nintendo. Click on the buttons below to get facts by ID or at random.</p>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="inner">
+                <span>i</span>
+                <h1>Fact ID</h1>
+                <p id="IDCard">This is an informative card that will tell you something that's... well, important!</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="factdisplay">
+          <p id="factText">[Fact Information Here].</p>
+          <label>&nbsp;</label>
+          <p><input type="text" name="FactID" id="fetchID" placeholder="Enter in a Numeric Value"></p>
+          <label>&nbsp;</label>
+            <input type="button" class="bigButton" id="findButton" value="Find by ID">
+          <label>&nbsp;</label>
+            <input type="button" class="bigButton" id="randButton" value="Random">
+            </div>
+            </div>
+
+    </div>
+    
+    <div class="col-sm-6">
+    <div class="row">    
+        <div class="container">
+            <div class="users">
+            <img src="./images/user1.jpg" alt="One of our users">
+            <p>"I love Nintendo! My favorite childhood memories was trashing my friends with Smash Bros and Golden Eye on the N64. 
+            The real terror of the local playground."</p>
+            <img src="./images/user2.jpg" alt="One of our users">
+            <p>"I have great memories of playing Gamecube games with my dad and older brother. 
+            My brother in particular was always awesome to play games with."</p>
+          </div>
+          </div>
+
+    <div class="container">
+    <div class="newsletter">
+    <form action="confirmation.php" method="post">
+        <h2>Subscribe to Newsletter</h2>
+        <label>Your First Name</label>
+        <p><input type="text" name="firstname" placeholder="First Name"></p>
+        
+        <label>Your Last Name</label>
+        <p><input type="text" name="lastname" placeholder="Last Name"></p>
+        
+        <label>Enter in E-mail</label>
+        <p><input type="text" name="email" placeholder="Email"></p>
+
+        <label>&nbsp;</label>
+        <input type="submit" class="button" value="Subscribe!">
+    </form>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="socialmedia">
+            <h2>Follow Us!</h2>
+          <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="footer text-center py-3">
+	<footer>
+        <p>&copy; <span id="copydate"></span> Kyker Freelancer: John Kyker</p>
+	</footer>
+    </div>
+    <script src="facts2.js"></script>
+    </body>
+</html>

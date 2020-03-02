@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Assignment 1</title>
+    <script>
+	function main() {
+	// John Kyker
+    // 1/16/2020
+    // 2020SP INFO-2431-LN01
+    // Use the starter file: A1.html
+    // Generate a random number between 1 and 10 using this expression: Math.floor(Math.random() * (10)) + 1
+    // Prompt the user to guess a number or type q to quit. Display the random number to the user as a hint. e.g. Guess from 1 to 10 or type q to quit hint: 7
+    // If they choose to quit display an alert that they are a quitter
+    // If they user entered a guess and didn't decide to quit, tell them the results of their guess
+    // too low
+    // too high
+    // correct
+    // invalid guess, if none of the above are true then the guess is invalid
+    // If they guessed correctly generate a new random number and ask the user if they would like to play again
+    // If they guess incorrectly they should see the guess prompt again
+    // After the player has decided to quit show them in one final alert how many times they correctly guessed the number.
+    // For the structure, I was able to complete this with one loop with a number of if/elseif/else statements.
+    // 
+    var randNum;
+    var guess;
+    var correctTimes;
+    var var_continue;
+    randNum = 0;
+    guess = -1;
+    correctTimes = 0;
+    var_continue = "y";
+    randNum = Math.floor(Math.random() * 11); //initalize randNumber
+    while (var_continue == "y") {
+        guess = window.prompt("Guess from 1 to 10 or type q to quit. Hint: " + randNum + "");
+        if (isNaN(guess)) { // Test to see if guess is numeric
+            if (guess == "q") {
+                window.alert("You're a quitter!");
+                var_continue = "n";
+            } else {
+                window.alert("Invalid Guess!");
+            }
+        } else {
+            if (guess < 1 || guess > 10) {
+                window.alert("Come on...guess within 1 to 10.");
+            } else {
+                if (guess == randNum) {
+                correctTimes = correctTimes + 1;
+                var_continue = window.prompt("Wow, great job! You can read!" + "\n" +
+                "Would you want to play again? y for yes and anything else for no.");
+                randNum = Math.floor(Math.random() * (10)) + 1; //reset random number
+            } else {
+                if (guess > randNum) {
+                    window.alert("You guessed too high, dummy!");
+                } else {
+                    window.alert("You guessed too low, dum dum!");
+                	}
+                }
+            }
+        }
+    }
+    window.alert("You guessed correctly this many times: " + correctTimes + "");
+}
+</script>
+</head>
+<body>
+    <main>
+    	<script type="text/javascript">
+    		main();
+    	</script>
+        <!-- Will show after the script has run -->
+        <h1 style ="font-family: 'Helvetica', sans-serif; color: #130C6B; background: #75DDDD; font-size: 72px; text-align: center;">Assignment 1 by John Kyker</h1>
+    </main>
+</body>
+</html>
